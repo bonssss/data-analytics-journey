@@ -39,8 +39,10 @@ flowchart TD
     subgraph Matplotlib_Skills ["Visualization Skills"]
         C1["Line & Scatter Plots"]
         C2["Histograms (Distributions)"]
-        C3["Box Plots (Outliers)"]
-        C4["Bar & Pie Charts"]
+        C3["Box Plots (Outliers & Groups)"]
+        C4["Bar & Pie Charts (GroupBy)"]
+        C5["Multivariate Color Hue"]
+        C6["Subplots & Object-Oriented API"]
     end
 
     A --> NumPy_Skills
@@ -122,11 +124,15 @@ Covers exploratory visual analysis and storytelling:
 - **Line Plots**: Customizing line colors, markers (`*`, `o`), line styles, and grids.
 - **Frequency Distributions (Histograms)**: Binning continuous data to reveal skewness and spread.
 - **Outlier Detection (Box Plots)**: Visualizing 5-number summaries (Min, Q1, Median, Q3, Max) and isolating extreme anomalies.
+- **Grouped Distribution Comparisons**: Multi-category box plots comparing numerical distributions across departments.
 - **Categorical Data Visualization**:
   - Value counts aggregation (`value_counts()`).
-  - Bar charts (`plt.bar`) for direct magnitude comparison.
-  - Pie charts (`plt.pie`) with percentage labels (`autopct`).
-- **Bivariate Relationships (Scatter Plots)**: Examining correlations (e.g. `Age` vs. `Salary`) and sorting values before trendline rendering.
+  - Direct bar charts and GroupBy aggregated KPI comparisons (`groupby().sum()`).
+  - Pie charts (`plt.pie`) with percentage labels (`autopct='%1.1f%%'`).
+- **Bivariate & Multivariate Relationships**:
+  - Scatter plots examining correlations (e.g. `Age` vs. `Salary`) and sorted trendlines.
+  - Adding a categorical hue dimension using color mapping and custom legends.
+- **Object-Oriented API & Subplots**: Building multi-panel dashboards using `plt.subplots()` with structured `Axes` formatting.
 
 👉 *Read the full conceptual companion:* [Matplotlib Handbook & Chart Matrix](./docs/matplotlib_guide.md)
 
