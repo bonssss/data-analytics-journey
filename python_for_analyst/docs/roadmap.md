@@ -52,10 +52,16 @@ Python is the most versatile programming language for data analysts due to its r
    - Data Cleaning: Handling nulls (`isnull`, `dropna`, `fillna`), duplicates, and type casting
    - Grouping & Aggregating (`groupby`, `pivot_table`)
    - Merging and combining datasets (`pd.concat`, `pd.merge`)
-4. **Data Visualization ([`matplotlib.ipynb`](../matplotlib.ipynb) | [Guide](./matplotlib_guide.md))**:
+4. **Data Visualization with Matplotlib ([`matplotlib.ipynb`](../matplotlib.ipynb) | [Guide](./matplotlib_guide.md))**:
    - Plot types: Line plots, Histograms, Box plots, Scatter plots, Bar/Pie charts
    - Customizing charts: titles, axis labels, legends, grids, and figure sizing
    - Outlier detection and distribution analysis
+5. **Statistical Visualization with Seaborn ([`seaborn.ipynb`](../seaborn.ipynb) | [Guide](./seaborn_guide.md))**:
+   - Multi-attribute mapping (`hue`, `style`, `size`)
+   - Statistical distribution estimation (`histplot`, `kdeplot`, `jointplot`)
+   - Categorical comparisons (`violinplot`, `swarmplot`, `barplot` with CIs)
+   - Pairwise correlation matrices and heatmaps (`heatmap`, `pairplot`)
+   - Linear regression trends and faceted small multiples (`regplot`, `lmplot`, `relplot`, `catplot`)
 
 ---
 
