@@ -5,6 +5,7 @@
 [![NumPy](https://img.shields.io/badge/NumPy-Array_Computing-013243?logo=numpy&logoColor=white)](https://numpy.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-Data_Analysis-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-Data_Visualization-11557c)](https://matplotlib.org/)
+[![Seaborn](https://img.shields.io/badge/Seaborn-Statistical_Viz-4c72b0?logo=scipy&logoColor=white)](https://seaborn.pydata.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./python_for_analyst/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./python_for_analyst/CONTRIBUTING.md)
 
@@ -50,12 +51,14 @@ data-analytics-journey/
     ├── numpy.ipynb                          # 🔢 Numerical computing & vectorization
     ├── pandas.ipynb                         # 🐼 Tabular wrangling & data cleaning
     ├── matplotlib.ipynb                     # 📊 Visualization & subplot dashboards
+    ├── seaborn.ipynb                        # 🌊 Statistical analysis & multi-variable EDA
     │
     ├── docs/                                # 📚 In-depth Conceptual Guides & Cheatsheets
     │   ├── roadmap.md                       # Career roadmap & study path
     │   ├── numpy_guide.md                   # NumPy layout, broadcasting & cheatsheet
     │   ├── pandas_guide.md                  # Pandas indexing, cleaning & cheatsheet
     │   ├── matplotlib_guide.md              # Matplotlib chart framework & handbook
+    │   ├── seaborn_guide.md                 # Seaborn statistical plotting handbook
     │   └── datasets_guide.md                # Data dictionaries & 10 guided challenges
     │
     └── data/                                # 📂 Real-World Curated Practice Datasets
@@ -93,6 +96,17 @@ The current core module is located in [`python_for_analyst/`](./python_for_analy
 - Object-Oriented (OO) API: Multi-panel subplot dashboards (`plt.subplots()`) and tight layout formatting.
 - 👉 *Reading Guide:* [Matplotlib Complete Handbook](./python_for_analyst/docs/matplotlib_guide.md)
 
+### 4. [Statistical Data Visualization with Seaborn (`seaborn.ipynb`)](./python_for_analyst/seaborn.ipynb)
+- Themes & aesthetics: Preset styles (`whitegrid`, `dark`, `ticks`), scaling contexts (`notebook`, `talk`).
+- Harmonious color palettes: Qualitative (`Dark2`), sequential (`Blues`), and diverging (`coolwarm`).
+- Relational mapping: Multi-variable scatter plots (`hue`, `style`, `size`) and faceted subplots (`relplot`).
+- Distribution analysis: Stepped histograms (`histplot`), continuous density curves (`kdeplot`), and bivariate joint plots (`jointplot`).
+- Categorical comparisons: Jittered strip plots, beeswarm plots (`swarmplot`), box plots, split violin plots (`violinplot`), and error-bar aggregators (`barplot`).
+- Matrix heatmaps: Annotated Pearson correlation heatmaps (`heatmap`).
+- Automated exploratory data analysis: Full pairwise feature matrix grids (`pairplot`).
+- Statistical regression: Linear trends with shaded 95% confidence intervals (`regplot`, `lmplot`).
+- 👉 *Reading Guide:* [Seaborn Complete Handbook](./python_for_analyst/docs/seaborn_guide.md)
+
 ---
 
 ## 📚 Complete Documentation & Guides Directory
@@ -105,6 +119,7 @@ You don't need Jupyter running to read and learn! All conceptual documentation a
 | **🔢 NumPy Guide** | Numerical computing | Contiguous memory, broadcasting rules, ufuncs & syntax table | [Read NumPy Guide](./python_for_analyst/docs/numpy_guide.md) |
 | **🐼 Pandas Guide** | Tabular data manipulation | Indexing matrix, missing data imputation, relational joins | [Read Pandas Guide](./python_for_analyst/docs/pandas_guide.md) |
 | **📊 Matplotlib Handbook** | Complete visualization handbook | Chart selection framework, grouped box plots, multivariate hue, OO API | [Read Matplotlib Handbook](./python_for_analyst/docs/matplotlib_guide.md) |
+| **🌊 Seaborn Handbook** | Statistical visualization guide | Themes, multi-attribute mapping, distributions, violin plots, heatmaps & pairplot | [Read Seaborn Handbook](./python_for_analyst/docs/seaborn_guide.md) |
 | **📂 Datasets & Exercises** | Real-world practice challenges | Schemas for Housing & Zomato datasets + 10 guided business prompts | [Read Datasets Guide](./python_for_analyst/docs/datasets_guide.md) |
 
 ---
