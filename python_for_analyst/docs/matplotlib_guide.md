@@ -466,5 +466,5 @@ Always call `plt.tight_layout()` before displaying or saving subplots. It automa
 
 ---
 
-[⬅️ Pandas Guide](./pandas_guide.md) | [Back to README](../README.md) | [Next: Datasets Guide ➡️](./datasets_guide.md)
+[⬅️ Pandas Guide](./pandas_guide.md) | [Back to README](../README.md) | [Next: Seaborn Guide ➡️](./seaborn_guide.md)
 

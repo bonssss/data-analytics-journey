@@ -5,6 +5,7 @@
 [![NumPy](https://img.shields.io/badge/NumPy-Array_Computing-013243?logo=numpy&logoColor=white)](https://numpy.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-Data_Analysis-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-Data_Visualization-11557c)](https://matplotlib.org/)
+[![Seaborn](https://img.shields.io/badge/Seaborn-Statistical_Viz-4c72b0?logo=scipy&logoColor=white)](https://seaborn.pydata.org/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
@@ -20,7 +21,8 @@ This repository is a structured, practical, and hands-on learning hub designed t
 flowchart TD
     A["NumPy Fundamentals (numpy.ipynb)"] --> B["Pandas Data Wrangling (pandas.ipynb)"]
     B --> C["Data Visualization (matplotlib.ipynb)"]
-    C --> D["Real-World Exploratory Data Analysis (data/)"]
+    C --> D["Statistical Visualization (seaborn.ipynb)"]
+    D --> E["Real-World Exploratory Data Analysis (data/)"]
 
     subgraph NumPy_Skills ["NumPy Core Skills"]
         A1["Arrays & Dtypes"]
@@ -36,18 +38,27 @@ flowchart TD
         B4["Concat & Relational Merges"]
     end
 
-    subgraph Matplotlib_Skills ["Visualization Skills"]
+    subgraph Matplotlib_Skills ["Matplotlib Skills"]
         C1["Line & Scatter Plots"]
         C2["Histograms (Distributions)"]
         C3["Box Plots (Outliers & Groups)"]
         C4["Bar & Pie Charts (GroupBy)"]
-        C5["Multivariate Color Hue"]
-        C6["Subplots & Object-Oriented API"]
+        C5["Subplots & Object-Oriented API"]
+    end
+
+    subgraph Seaborn_Skills ["Seaborn Skills"]
+        D1["Themes & Color Palettes"]
+        D2["Multi-Attribute Mapping (hue/style/size)"]
+        D3["Distribution KDE & Joint Plots"]
+        D4["Violin, Swarm & Strip Plots"]
+        D5["Correlation Heatmaps & Pairplot"]
+        D6["Linear Regression Modeling"]
     end
 
     A --> NumPy_Skills
     B --> Pandas_Skills
     C --> Matplotlib_Skills
+    D --> Seaborn_Skills
 ```
 
 ---
@@ -67,12 +78,14 @@ python_for_analyst/
 ├── numpy.ipynb                    # 📘 Notebook: NumPy numerical computing & vectorization
 ├── pandas.ipynb                   # 📙 Notebook: Pandas tabular manipulation & data cleaning
 ├── matplotlib.ipynb               # 📗 Notebook: Matplotlib visualization & outlier detection
+├── seaborn.ipynb                  # 🌊 Notebook: Seaborn statistical analysis & multi-variable EDA
 │
 ├── docs/                          # 📚 Comprehensive Reading & Conceptual Guides
 │   ├── roadmap.md                 # End-to-end Data Analyst Career Roadmap
 │   ├── numpy_guide.md             # NumPy concepts, memory layouts & cheatsheet
 │   ├── pandas_guide.md            # Pandas methods, indexing & cleaning cheatsheet
 │   ├── matplotlib_guide.md        # Figure anatomy, chart selection & styling handbook
+│   ├── seaborn_guide.md           # Statistical plotting, aesthetics & palette handbook
 │   └── datasets_guide.md          # Data dictionaries & 10 guided practice challenges
 │
 └── data/                          # 📂 Datasets for analysis and practice
@@ -138,6 +151,25 @@ Covers exploratory visual analysis and storytelling:
 
 ---
 
+### 4. [Statistical Data Visualization with Seaborn (`seaborn.ipynb`)](./seaborn.ipynb)
+Covers high-level statistical visualization and multi-dimensional exploratory data analysis:
+- **Themes & Aesthetics**: Setting styles (`whitegrid`, `dark`, `ticks`), contexts (`notebook`, `talk`), and despining chart borders.
+- **Harmonious Color Palettes**: Qualitative (`Dark2`, `Set2`), sequential (`viridis`, `Blues`), and diverging (`coolwarm`).
+- **Relational Plots**: Multi-attribute scatter plots (`hue`, `style`, `size`) and faceted small multiple subplots (`relplot`).
+- **Distribution Analysis**: Kernel Density Estimation (`kdeplot`), stepped histograms (`histplot`), and joint distributions with marginals (`jointplot`).
+- **Categorical Exploration**:
+  - Raw distributions: Strip plots with jitter and beeswarm plots (`swarmplot`).
+  - Statistical spreads: Box plots (IQR outliers) and split violin plots (`violinplot`).
+  - Point estimates: Bar plots with uncertainty error bars (`barplot`) and frequency counts (`countplot`).
+- **Correlation Matrix Heatmaps**: Pearson correlation heatmaps with numeric annotations (`heatmap`).
+- **Pairwise EDA Automation**: Full feature relationship matrices with diagonal density plots (`pairplot`).
+- **Statistical Regression**: Linear trends with 95% confidence intervals (`regplot`, `lmplot`).
+- **Real-World Housing Case Study**: Applying Seaborn to analyze price drivers and square footage regressions.
+
+👉 *Read the full conceptual companion:* [Seaborn Guide & Handbook](./docs/seaborn_guide.md)
+
+---
+
 ## 📚 Complete Reading Documentation
 
 You don't need a Jupyter server running to learn! You can read our detailed markdown guides directly on GitHub:
@@ -148,6 +180,7 @@ You don't need a Jupyter server running to learn! You can read our detailed mark
 | [**NumPy Guide**](./docs/numpy_guide.md) | Numerical Computing | Array memory layout, broadcasting rules, indexing & syntax cheatsheet |
 | [**Pandas Guide**](./docs/pandas_guide.md) | Data Wrangling | DataFrame operations, `loc` vs `iloc`, cleaning nulls & join strategies |
 | [**Matplotlib Guide**](./docs/matplotlib_guide.md) | Visualization | Anatomy of a figure, chart selection matrix, outlier analysis & styling |
+| [**Seaborn Guide**](./docs/seaborn_guide.md) | Statistical Viz | Themes, multi-attribute mapping, distributions, box/violin, heatmaps & pairplot |
 | [**Datasets & Exercises**](./docs/datasets_guide.md) | Hands-On Practice | Data dictionaries for Housing & Zomato + 10 guided business challenges |
 
 ---

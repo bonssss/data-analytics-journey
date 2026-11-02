@@ -147,4 +147,4 @@ print(f"Zomato loaded: {zomato_df.shape[0]} rows, {zomato_df.shape[1]} columns")
 
 ---
 
-[⬅️ Matplotlib Guide](./matplotlib_guide.md) | [Back to README](../README.md)
+[⬅️ Seaborn Guide](./seaborn_guide.md) | [Back to README](../README.md)
